@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "SelectedItems";
+}
+
+<style>
+    form {
+        width: 100%;
+        border: 2px solid lightgreen;
+        background-color: aqua;
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+    }
+</style>
+
+<h2>Selected Items</h2>
+
+<form method="post">
+    <br />
+    Enter the quantity of the @TempData["PizzaType"]:
+    <input type="number" name="itemQuantity" /> <br /><br />
+    Enter the Delivery Address:
+    <input type="text" name="deliveryAddress" />
+    <br /><br />
+    <input type="submit" />
+</form>
