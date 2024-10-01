@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>    
+//     let student={
+//         rollno:1,
+//         name:"Ashish",
+//         greet:function(){
+
+//             console.log("Hello "  + this.name);
+//         }
+//   };
+
+//     greetuser=(n1)=>{
+//             console.log("Welcome " + n1);
+//         }
+
+//     greetuser("Sara");
+
+
+    </script>
+</head>
+<body id="b1">
+<p id="p1">HEllo from paragraph,.... Demo1</p> 
+<button id="btn1">Click Here</button>   
+<script>
+//     changeText=function(){
+// document.getElementById("p1").innerHTML = this;
+//     }
+
+//this is not supported by arrow functions
+changeText=()=>{
+document.getElementById("p1").innerHTML = this;
+    }
+
+
+//     changecolor=function(){
+// document.getElementById("b1").style.backgroundColor ="red";
+//     }
+changecolor=()=>{
+document.getElementById("b1").style.backgroundColor ="red";
+    }
+
+
+window.addEventListener("load",changecolor);
+document.getElementById('btn1').addEventListener("click",changeText);
+</script>
+
+
+</body>
+</html>

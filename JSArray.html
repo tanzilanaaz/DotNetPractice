@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let numbers=[10,23,2,24,244,145];
+
+        numbers.push(100);
+
+        numbers.forEach(printElement);
+
+        function printElement(i)
+        {
+console.log(i);
+
+        }
+
+console.log("For of");
+        for(element of numbers)
+        {
+            console.log(element);
+        }
+        console.log("for in-- prints index")
+        for(element in numbers)
+        {
+            console.log(element);
+        }
+console.log("Index way")
+        for(element in numbers)
+        {
+            console.log(numbers[element]);
+        }
+
+        let s=new Set([1,2,3]);
+        s.add(4);
+        s.add(5);
+
+        for(let element of s)
+        {
+console.log(element);
+
+        }
+console.log("---------------------------------------------")
+        let m=new Map();
+        m.set("empid",10);
+        m.set("ename","Sunil");
+
+        for(let[k,v] of m)
+        {
+
+            console.log(k+ '---' + v);
+            
+        }
+        
+
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

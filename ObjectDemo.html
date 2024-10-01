@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var d=new Date(y/m/d)
+
+        //constructor function 
+        function Person()
+        {
+            this.name="Anil",
+            this.age=22,
+            this.greetPerson=function(){
+                console.log("Hello " + this.name);
+            }
+        }
+
+
+        function Person(fname,lname,age){
+            this.firstname=fname,
+            this.lastname=lname,
+            this.page=age,
+            this.display=function(){
+                console.log(this.firstname);
+                console.log(this.lastname);
+                console.log(this.page);
+
+
+            }
+
+
+        }
+//to create object from constructor function we use "new" keyword
+         const p=new Person();
+          console.log(p.name);
+          console.log(p.age);
+          console.log(p.greetPerson());
+
+  //Built in function constructors
+let myname=new String("Jack");
+let mycity=new String("Pune");
+let mybirthdate=new Date(2024,1,21);
+let joiningDay=new Number(10);
+
+console.log(myname);
+console.log(mycity);
+console.log(mybirthdate);
+console.log(joiningDay);
+console.log("---------------------------------")
+
+        Person.prototype.country="India";
+        p1.display();
+        console.log("Saurov's country:")
+        console.log(p1.country)
+
+        const p2=new Person("Sachin","Tendulkar",40);
+        console.log(p2.country);
+
+
+
+
+        
+let student={
+    firstname:"Tina",
+    age:12,
+    city:'Pune',
+    birthdate:new Date(2010,1,11),
+    grades:{
+        maths:90,
+        science:89,
+        english:69
+    },
+    greetStudent:function(){console.log(this.firstname)}
+};
+
+
+function showData()
+{
+    const student={
+        firstname:"Tina",
+        age:12,
+        city:'Pune',
+        birthdate:new Date(2010,1,11)
+    };
+    
+    
+//    let student={
+ //       firstname:"Tina",
+//        age:12,
+//        city:'Pune',
+//        birthdate:new Date(2010,1,11),
+//        grades:{
+//            maths:90,
+//            science:89,
+//            english:69
+//        }
+//};
+
+console.log("The type of student = "  + typeof(student));
+
+
+console.log(student.firstname);
+console.log(student.age);
+console.log(student.city);
+console.log(student.birthdate);
+
+console.log("The grades are :")
+console.log(student.grades.maths);
+console.log(student.grades.english);
+console.log(student.grades.science);
+
+
+console.log("----------------");
+console.log(student["firstname"]);
+console.log(student["age"]);
+console.log(student["city"]);
+console.log(student["birthdate"]);
+
+    </script>
+</head>
+<!-- <body onload="showData()"> -->
+    <body>
+    <form>
+        <input type="button" id="show" value="ShowDataOnClick" onclick="student.greetStudent()"/>
+    </form>
+
+    
+</body>
+</html>
